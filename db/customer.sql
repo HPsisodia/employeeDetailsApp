@@ -11,7 +11,7 @@ CREATE TABLE users(
    last_logged_in                       VARCHAR(40),
  );
 
-INSERT INTO batch (
+INSERT INTO users (
 user_id,
 user_name,
 user_email,
