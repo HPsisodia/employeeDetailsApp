@@ -31,6 +31,10 @@ const upload  = multer({
 
 //router.post('/', upload.single("file"), registration);
 router.get('/', (req,res) =>{
+  res.cookie('jwt', 'loggedout', {
+    expires: new Date(Date.now() + 10*1000 ),
+    httpOnly: true
+  });
     res.render("register");
 });
 
