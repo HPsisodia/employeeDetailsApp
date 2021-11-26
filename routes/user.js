@@ -53,7 +53,7 @@ router.get('/image/:id', getCustomerImage);
 
 router.post('/insert', protect, restrictTo('admin'), upload.single("file"), registration);
 router.get('/insert', protect, restrictTo('admin'), (req,res) =>{
-    res.render("insertUser");
+    res.render("insertuser");
 });
 
 router.delete('/delete/:id', deleteCustomer);
